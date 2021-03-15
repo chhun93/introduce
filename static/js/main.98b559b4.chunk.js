@@ -1,0 +1,2 @@
+(this["webpackJsonpintroduce-chhun93"]=this["webpackJsonpintroduce-chhun93"]||[]).push([[0],{9:function(e,c,n){"use strict";n.r(c);var t=n(1),r=n.n(t),s=n(3),i=n.n(s),h=n(0),d=function(){return Object(h.jsx)("div",{className:"App",children:Object(h.jsx)("h1",{children:"HELLO"})})};i.a.render(Object(h.jsx)(r.a.StrictMode,{children:Object(h.jsx)(d,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.98b559b4.chunk.js.map
