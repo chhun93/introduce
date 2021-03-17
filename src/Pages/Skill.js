@@ -26,7 +26,7 @@ export default class Skill extends Component {
     ));
     return (
       <div className="up-on-scroll">
-        <div className="skill">
+        <div id="skill">
           skill
           {skillItem}
         </div>

@@ -8,15 +8,15 @@ export default class Navi extends Component {
   render() {
     return (
       <div className="up-on-scroll">
-        <div className="navi">
+        <div className="navi" id="navi">
           <div className="naviLeft">
-            <NaviItem itemName="이창훈" />
+            <NaviItem item="이창훈" itemName="ch" />
           </div>
           <div className="naviRight">
-            <NaviItem itemName="INTRO" />
-            <NaviItem itemName="SKILL" />
-            <NaviItem itemName="CONTACT" />
-            <NaviItem itemName={<CircleHalf />} />
+            <NaviItem item="INTRO" itemName="intro" />
+            <NaviItem item="SKILL" itemName="skill" />
+            <NaviItem item="CONTACT" itemName="contact" />
+            <NaviItem item={<CircleHalf />} itemName="reverse" />
           </div>
         </div>
       </div>

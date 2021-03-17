@@ -2,35 +2,29 @@ import { Component } from "react";
 
 import "../Styles/NaviItem.css";
 
-const isNavItmes = (itemName) => {
-  var ret = false;
-  if (itemName.substr(0, 1) >= "a" && itemName.substr(0, 1) <= "z") {
-    ret = true;
-  }
-  return ret;
-};
-
 export default class NavItem extends Component {
-  scrollToTop = (event) => {
-    window.scrollTo(100,100);
-  };
-  componentDidMount = () => {
-    var itemName = this.props.itemName.toString().toLowerCase();
-    if (isNavItmes(itemName)) {
-      if (itemName.substr(0, 1) === "i") {
-        console.log(itemName);
-      }
-    }
-  };
+  scrollDown=(itemName)=>{
+    const naviItem = document.getElementById("navi");
+    const naviHeight = naviItem.getBoundingClientRect();
+
+    const item = document.getElementById(itemName);
+    const location = item.getBoundingClientRect();
+    var diffItemNavi = location.top-naviHeight.height;
+    if(diffItemNavi<0)
+      diffItemNavi = 0;
+    window.scrollTo({top:diffItemNavi, behavior:'smooth'})
+  }
   render() {
+    const {item, itemName} = this.props;
+    const name = itemName.toString();
+
     return (
       <a
         className="nav-link"
-        href="#"
-        id={this.props.itemName.toString()}
-        onClick={this.scrollToTop()}
+        id={"nav"+name}
+        onClick={()=>this.scrollDown(name)}
       >
-        {this.props.itemName}
+        {item}
       </a>
     );
   }

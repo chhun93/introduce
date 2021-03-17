@@ -4,6 +4,7 @@ import Navi from "./Navi";
 import Intro from "../Pages/Intro";
 import Skill from "../Pages/Skill";
 import Contact from "../Pages/Contact";
+import Foot from "../Pages/Foot";
 
 import "../Styles/App.css";
 
@@ -15,11 +16,14 @@ const isElementUnder = (element, triggerDiff) => {
 };
 
 const handleScroll = () => {
+  const naviItem = document.getElementById("navi");
+  const naviHeight = naviItem.getBoundingClientRect();
+  
   const elements = document.querySelectorAll(".up-on-scroll");
   elements.forEach((element) => {
     if (isElementUnder(element, -20)) {
       element.style.opacity = "0";
-      element.style.transform = "translateY(80px)";
+      element.style.transform = "translateY("+naviHeight.height.toString()+"px)"
     } else {
       element.style.opacity = "1";
       element.style.transform = "translateY(0px)";
@@ -28,8 +32,7 @@ const handleScroll = () => {
 };
 
 export default class App extends Component {
-  constructor() {
-    super();
+  componentDidMount(){    
     window.addEventListener("scroll", handleScroll);
   }
   render() {
@@ -39,6 +42,7 @@ export default class App extends Component {
         <Intro />
         <Skill />
         <Contact />
+        <Foot/>
       </div>
     );
   }
