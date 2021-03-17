@@ -1,0 +1,10 @@
+.naviLeft{
+    display: inline-flex;
+    width: 40vw;
+    margin-left: 10vw;
+}
+.naviRight{
+    display: inline-flex;
+    width: 40vw;
+    margin-left: 5vw;
+}
