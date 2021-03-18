@@ -1,0 +1,19 @@
+.myModal{
+    display: inline-flex;
+    width: 70vw;
+    height: 80vh;
+    margin: 10vh 0 0 15vw;
+
+    box-shadow: 13px 13px 27px -5px #15161b,
+                8px 8px 16px -8px #17181d, 
+                6px 6px 16px -6px #191921;
+}
+#myModal-left{
+    width: 50%;
+    background-color: #ebebeb;
+}
+
+#myModal-right{
+    width: 50%;
+    background-color: #1d1d25;
+}
