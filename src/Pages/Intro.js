@@ -11,7 +11,7 @@ export default class Intro extends Component {
           <button
             id="goToContact"
             type="button"
-            className="btn btn-outline-success"
+            className="btn btn-outline-warning"
             onClick={() => {
               ScrollDown.ByItem("contact");
             }}

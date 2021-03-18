@@ -4,3 +4,8 @@
 
     background-color: #1d1d25;
 }
+
+#goToContact{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";    
+    font-weight: 700;
+}

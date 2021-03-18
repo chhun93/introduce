@@ -10,11 +10,12 @@ export default class Navi extends Component {
       <div className="up-on-scroll">
         <div className="navi" id="navi">
           <div className="naviLeft">
-            <NaviItem item="이창훈" itemName="ch" />
+            <NaviItem item="CHHUN" itemName="ch" />
           </div>
           <div className="naviRight">
             <NaviItem item="INTRO" itemName="intro" />
             <NaviItem item="SKILL" itemName="skill" />
+            <NaviItem item="EXPERIMENT" itemName="experiment" />
             <NaviItem item="CONTACT" itemName="contact" />
             <NaviItem item={<CircleHalf />} itemName="reverse" />
           </div>
