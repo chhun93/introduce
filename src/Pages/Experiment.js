@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { ArrowDownSquare,ArrowDownSquareFill } from "react-bootstrap-icons";
 
 import "../Styles/Experiment.css";
 
@@ -7,7 +8,9 @@ export default class Experiment extends Component {
     return (
       <div className="up-on-scroll">
         <div id="experiment">
-          experiment
+          <div className="experiment-content">
+            <p className="experiments text1">Experiment</p>
+          </div>
         </div>
       </div>
     );

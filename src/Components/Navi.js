@@ -7,12 +7,12 @@ import "../Styles/Navi.css";
 export default class Navi extends Component {
   render() {
     return (
-      <div className="up-on-scroll">
-        <div className="navi" id="navi">
-          <div className="naviLeft">
+      <div className="navi" id="navi">
+        <div className="row">
+          <div className="col align-self-start naviLeft">
             <NaviItem item="CHHUN" itemName="ch" />
           </div>
-          <div className="naviRight">
+          <div className="col align-self-end naviRight">
             <NaviItem item="INTRO" itemName="intro" />
             <NaviItem item="SKILL" itemName="skill" />
             <NaviItem item="EXPERIMENT" itemName="experiment" />

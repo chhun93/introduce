@@ -8,16 +8,29 @@ export default class Intro extends Component {
     return (
       <div className="up-on-scroll">
         <div id="intro">
-          <button
-            id="goToContact"
-            type="button"
-            className="btn btn-outline-warning"
-            onClick={() => {
-              ScrollDown.ByItem("contact");
-            }}
-          >
-            ABOUT ME
-          </button>
+          <div id="intro-content">
+            <p className="introduceName">
+              <p className="introduce MyName1">안녕하세요!</p>
+              <p className="introduce MyName2">&nbsp;</p>
+              <p className="introduce MyName3">이창훈입니다.</p>
+              <br/>
+            </p>
+            <p className="introduceMyself">
+              <p className="introduce MyName4">꾸준히&nbsp;</p>
+              <p className="introduce MyName5">발전하는&nbsp;</p>
+              <p className="introduce MyName6">개발자입니다.</p>
+            </p>
+            <button
+              id="goToContact"
+              type="button"
+              className="btn btn-outline-warning"
+              onClick={() => {
+                ScrollDown.ByItem("contact");
+              }}
+            >
+              ABOUT ME
+            </button>
+          </div>
         </div>
       </div>
     );
