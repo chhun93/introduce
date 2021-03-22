@@ -17,7 +17,7 @@ export default class Intro extends Component {
             </p>
             <p className="introduceMyself">
               <p className="introduce MyName4">꾸준히&nbsp;</p>
-              <p className="introduce MyName5">발전하는&nbsp;</p>
+              <p className="introduce MyName5">공부하는&nbsp;</p>
               <p className="introduce MyName6">개발자입니다.</p>
             </p>
             <button
