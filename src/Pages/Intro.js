@@ -9,17 +9,17 @@ export default class Intro extends Component {
       <div className="up-on-scroll">
         <div id="intro">
           <div id="intro-content">
-            <p className="introduceName">
+            <div className="introduceName">
               <p className="introduce MyName1">안녕하세요!</p>
               <p className="introduce MyName2">&nbsp;</p>
               <p className="introduce MyName3">이창훈입니다.</p>
-              <br/>
-            </p>
-            <p className="introduceMyself">
+              <br />
+            </div>
+            <div className="introduceMyself">
               <p className="introduce MyName4">꾸준히&nbsp;</p>
               <p className="introduce MyName5">공부하는&nbsp;</p>
               <p className="introduce MyName6">개발자입니다.</p>
-            </p>
+            </div>
             <button
               id="goToContact"
               type="button"

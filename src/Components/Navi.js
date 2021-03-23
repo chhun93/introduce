@@ -14,7 +14,6 @@ export default class Navi extends Component {
           </div>
           <div className="col align-self-end naviRight">
             <NaviItem item="INTRO" itemName="intro" />
-            <NaviItem item="SKILL" itemName="skill" />
             <NaviItem item="EXPERIMENT" itemName="experiment" />
             <NaviItem item="CONTACT" itemName="contact" />
             <NaviItem item={<CircleHalf />} itemName="reverse" />

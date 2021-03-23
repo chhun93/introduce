@@ -2,7 +2,6 @@ import { Component } from "react";
 
 import Navi from "./Navi";
 import Intro from "../Pages/Intro";
-import Skill from "../Pages/Skill";
 import Experiment from "../Pages/Experiment";
 import Contact from "../Pages/Contact";
 import Foot from "../Pages/Foot";
@@ -21,7 +20,6 @@ export default class App extends Component {
       <div className="App">
         <Navi />
         <Intro />
-        {/* <Skill /> */}
         <Experiment />
         <Contact />
         <Foot />

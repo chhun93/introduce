@@ -8,7 +8,7 @@ export default class Contact extends Component {
     return (
       <div className="up-on-scroll">
         <div id="contact">
-        contact
+          contact
           <MyModal />
         </div>
       </div>
