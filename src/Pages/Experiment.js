@@ -23,11 +23,7 @@ export default class Experiment extends Component {
               <Description skillSet= {<div className="skill-images">
                 <LoadImg what="skill" path="language_C" id="0" />
                 <LoadImg what="skill" path="language_Cpp" id="0" />
-                <LoadImg what="skill" path="database_Oracle" id="0" />
-              </div>}
-              contentText="navis에 대한 설명입니다. navis에 대한 설명입니다. 
-              navis에 대한 설명입니다. navis에 대한 설명입니다. 
-              navis에 대한 설명입니다. navis에 대한 설명입니다. "/>
+              </div>} path="navisAMS"/>
             </div>
             <div className="samsung">
               <Description skillSet={<div className="skill-images">
@@ -35,9 +31,7 @@ export default class Experiment extends Component {
                 <LoadImg what="skill" path="language_Cs" id="1" />
                 <LoadImg what="skill" path="database_Oracle" id="1" />
               </div>}
-              contentText="samsung에 대한 설명입니다. samsung에 대한 설명입니다. 
-              samsung에 대한 설명입니다. samsung에 대한 설명입니다. 
-              samsung에 대한 설명입니다. samsung에 대한 설명입니다. "/>
+              path="samsungSDS"/>
               <a
                 href="https://www.samsungsds.com/en/manufacturing/manufacturing.html"
                 target="_blank"
