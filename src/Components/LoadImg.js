@@ -12,19 +12,14 @@ export default class LoadImg extends Component {
 
     const whatItem = (
       <img
-        src={"/Images/" + path + ".png"}
+        src={process.env.PUBLIC_URL + "/Images/" + path + ".png"}
         className={what + "_img " + what + "_" + this.isOddNumId(id)}
         id={path + "_" + id}
         alt={path}
         key={path + "_" + id}
       />
     );
-    console.log("src : /Images/" + path + ".png");
-    console.log(
-      "className : " + what + "_img " + what + "_" + this.isOddNumId(id)
-    );
-    console.log("id : " + path + "_" + id);
-    console.log("alt : " + path);
+    
     return <div className={what}>{whatItem}</div>;
   }
 }
