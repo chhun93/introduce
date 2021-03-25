@@ -10,9 +10,9 @@ export default class Intro extends Component {
         <div id="intro">
           <div id="intro-content">
             <div className="introduceName">
-              <p className="introduce MyName1">안녕하세요!</p>
+              <p className="introduce MyName1">안녕하세요</p>
               <p className="introduce MyName2">&nbsp;</p>
-              <p className="introduce MyName3">이창훈입니다.</p>
+              <p className="introduce MyName3">이창훈입니다 😃</p>
               <br />
             </div>
             <div className="introduceMyself">

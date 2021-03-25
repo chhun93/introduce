@@ -8,18 +8,15 @@ export default class Description extends Component {
     const { skillSet, path } = this.props;
     const arrData = descr.map((item, index) => {
       if (item.name === path) {
-        return (
-            <div>{item.name} from {item.content}</div>
-        );
+        return item.content;
       }
     });
-    const innerHtmlObject = {
-        __html: arrData,
-      };
     return (
       <div className="description">
         {skillSet}
-        <div dangerouslySetInnerHTML={innerHtmlObject}/>
+        <div>
+          {arrData}
+        </div>
       </div>
     );
   }
