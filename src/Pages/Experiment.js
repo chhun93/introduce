@@ -13,32 +13,29 @@ export default class Experiment extends Component {
             <p className="experiments text1">Experiment</p>
 
             <div className="navis">
-              <a
-                href="https://www.navis-ams.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LoadImg what="work" path="navisAMS" id="0" />
-              </a>
-              <Description skillSet= {<div className="skill-images">
-                <LoadImg what="skill" path="language_C" id="0" />
-                <LoadImg what="skill" path="language_Cpp" id="0" />
-              </div>} path="navisAMS"/>
+              <LoadImg what="work" path="navisAMS" id="0" />
+              <Description
+                skillSet={
+                  <div className="skill-images">
+                    <LoadImg what="skill" path="language_C" id="0" />
+                    <LoadImg what="skill" path="language_Cpp" id="0" />
+                  </div>
+                }
+                path="navisAMS"
+              />
             </div>
             <div className="samsung">
-              <Description skillSet={<div className="skill-images">
-                <LoadImg what="skill" path="frame_Vb" id="1" />
-                <LoadImg what="skill" path="language_Cs" id="1" />
-                <LoadImg what="skill" path="database_Oracle" id="1" />
-              </div>}
-              path="samsungSDS"/>
-              <a
-                href="https://www.samsungsds.com/en/manufacturing/manufacturing.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LoadImg what="work" path="samsungSDS" id="1" />
-              </a>
+              <Description
+                skillSet={
+                  <div className="skill-images">
+                    <LoadImg what="skill" path="frame_Vb" id="1" />
+                    <LoadImg what="skill" path="language_Cs" id="1" />
+                    <LoadImg what="skill" path="database_Oracle" id="1" />
+                  </div>
+                }
+                path="samsungSDS"
+              />
+              <LoadImg what="work" path="samsungSDS" id="1" />
             </div>
           </div>
         </div>

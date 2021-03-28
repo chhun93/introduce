@@ -6,24 +6,31 @@ import "../Styles/Description.css";
 export default class Description extends Component {
   render() {
     const { skillSet, path } = this.props;
-    const arrDataContent = descr.map((item) => {
+    const arrDataContents = descr.map((item) => {
       if (item.name === path) {
-        return item.content;
+        return item;
       }
     });
-    const arrDataAddress = descr.map((item) => {
-      if (item.name === path) {
-        return item.address;
+    let itemObj = "";
+    for (var i in arrDataContents) {
+      if (arrDataContents[i] !== undefined) {
+        itemObj = arrDataContents[i];
+        break;
       }
-    });
-    const itemContent = arrDataContent;
-    const itemAddress = arrDataAddress;
+    }
     return (
       <div className="description">
         {skillSet}
-        <p>
-          {`${itemContent}\n  \n  \n${itemAddress}`}
-        </p>
+        <div>
+          <li>{itemObj.period}</li>
+          <li>{itemObj.content}</li>
+          <li>
+            LINK :{" "}
+            <a href={itemObj.address} target="_blank" rel="noopener noreferrer">
+              {itemObj.name}
+            </a>
+          </li>
+        </div>
       </div>
     );
   }

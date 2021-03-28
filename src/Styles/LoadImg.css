@@ -1,18 +1,14 @@
 .work_img {
     resize: both;
     float: center;
-    width: 50vw;
-    height: 70vh;
+    width: 40vw;
+    height: 60vh;
 
-    margin : 12vh 0 2vh 0;
+    margin : 12vh 0 3vh 0;
 
     box-shadow: 13px 13px 27px -5px #3d3d2c,
         8px 8px 16px -8px #4e4e3b,
         6px 6px 16px -6px #68684b;
-}
-
-.work_img:hover{
-    cursor: pointer;
 }
 
 .work_even{
