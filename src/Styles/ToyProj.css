@@ -1,0 +1,26 @@
+#toyProj{
+    width: 100vw;
+    height: auto;
+    background-color: #f3f3f3;
+}
+.text1{
+    position: absolute;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #b59c96;
+
+    margin : 3vh 0 2vh 40vw;
+}
+
+.toDoList{
+    display: inline-flex;
+}
+.makeMindMap{    
+    display: inline-flex;
+    margin-left: 5vw;
+}
+.portfolio{
+    display: inline-flex;
+}

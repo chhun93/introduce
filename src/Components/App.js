@@ -3,6 +3,7 @@ import { Component } from "react";
 import Navi from "./Navi";
 import Intro from "../Pages/Intro";
 import Experiment from "../Pages/Experiment";
+import ToyProj from "../Pages/ToyProj";
 import Contact from "../Pages/Contact";
 import Foot from "../Pages/Foot";
 
@@ -21,6 +22,7 @@ export default class App extends Component {
         <Navi />
         <Intro />
         <Experiment />
+        <ToyProj/>
         <Contact />
         <Foot />
       </div>
