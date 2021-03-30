@@ -11,9 +11,39 @@
 #myModal-left{
     width: 50%;
     background-color: #ebebeb;
+
+    padding: 3vh 0 0 3vw;
 }
 
 #myModal-right{
     width: 50%;
     background-color: #202028;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+#background-text{
+    position: absolute;
+    
+    font-size: 15vh;
+    font-weight: 1000;
+
+    top: 5vh;
+    opacity: 0.14;
+    color: #acacac;
+}
+
+#forground-text-aboutMe{
+    font-family: Georgia ;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+svg{
+    height: 60px;
+    width: 60px;
+}
+.modalSkill:hover{
+    cursor: pointer;
+    transition-duration: 2s;
+    fill: #00ffff;
 }
