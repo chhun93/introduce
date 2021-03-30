@@ -2,13 +2,10 @@
     background-color: #1d1d25;
     width: 100vw;
     height: 10vh;
-    margin: 0px;
-    padding: 0px;
+    padding: 0 2vw 0 3vw;
+    
 }
 
 .col {
     display: inline-flex;
-}
-.naviLeft{
-    margin-left : 5vw;
 }

@@ -9,7 +9,8 @@
     transition: background-size 0.8s;
     color: #afaebe;
     cursor: pointer;
-  }
+
+}
 .underline.yellow {
     background-image: linear-gradient(transparent 60%, #F8CD07 40%);
 }
@@ -25,4 +26,6 @@
 #navch:hover{
     color: #afaebe;
 }
-
+.naviRight{
+    margin-top: 3vh;
+}

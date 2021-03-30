@@ -10,7 +10,7 @@
     position: absolute;
     width: 100vw;
     margin-top: 25vh;
-    margin-left: 10vw;
+    padding-left: 10vw;
 }
 .introduceName{
     display: inline-flex;
