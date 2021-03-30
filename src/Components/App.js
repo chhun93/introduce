@@ -23,8 +23,8 @@ export default class App extends Component {
         <Intro />
         <Experiment />
         <ToyProj/>
-        <Contact />
-        <Foot />
+        {/* <Contact />
+        <Foot /> */}
       </div>
     );
   }
