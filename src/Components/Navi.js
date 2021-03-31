@@ -16,7 +16,7 @@ export default class Navi extends Component {
             <NaviItem item="INTRO" itemName="intro" />
             <NaviItem item="EXPERIMENT" itemName="experiment" />
             <NaviItem item="CONTACT" itemName="contact" />
-            {/* <NaviItem item={<CircleHalf />} itemName="reverse" /> */}
+            <NaviItem item={<CircleHalf height="4vh"/>} itemName="reverse" />
           </div>
         </div>
       </div>
