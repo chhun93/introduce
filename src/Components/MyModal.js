@@ -8,33 +8,20 @@ export default class MyModal extends Component {
   render() {
     function sendMail(e) {
       e.preventDefault();
-      var serviceId = InfoEmailJs.emailServiceId.toString();
-      serviceId = serviceId.substr(serviceId.indexOf("\"")+1);
-      serviceId = serviceId.substr(0,serviceId.toString().indexOf("\""));
+      var serviceId = InfoEmailJs.emailServiceId();
 
-      var templateId = InfoEmailJs.emailTemplateId.toString();
-      templateId = templateId.substr(templateId.indexOf("\"")+1);
-      templateId = templateId.substr(0,templateId.toString().indexOf("\""));
-      
-      var userId = InfoEmailJs.emailUserId.toString();
-      userId = userId.substr(userId.indexOf("\"")+1);
-      userId = userId.substr(0,userId.toString().indexOf("\""));
+      var templateId = InfoEmailJs.emailTemplateId();
 
-      emailjs
-        .sendForm(
-          serviceId,
-          templateId,
-          e.target,
-          userId
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      var userId = InfoEmailJs.emailUserId();
+
+      emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     }
     return (
       <div className="myModal">
