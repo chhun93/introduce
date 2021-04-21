@@ -14,13 +14,10 @@
     margin : 3vh 0 2vh 40vw;
 }
 
-.toDoList{
+.toDoList, .portfolio{
     display: inline-flex;
 }
-.makeMindMap{    
+.makeMindMap, .chrome-stock{    
     display: inline-flex;
     margin-left: 5vw;
-}
-.portfolio{
-    display: inline-flex;
 }

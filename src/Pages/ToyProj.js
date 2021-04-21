@@ -39,8 +39,7 @@ export default class ToyProj extends Component {
                   path="make Mind Map"
                 />
                 <LoadImg what="work" path="makeMindMap" id="3" />
-              </div>
-              
+              </div>              
               <div className="portfolio">
                 <LoadImg what="work" path="portfolio" id="2" />
                 <Description
@@ -54,6 +53,18 @@ export default class ToyProj extends Component {
                   }
                   path="PORTFOLIO"
                 />
+              </div>
+              <div className="chrome-stock">
+                <Description
+                  skillSet={
+                    <div className="skill-images">
+                    <LoadImg what="skill" path="language_Js" id="4" />
+                    <LoadImg what="skill" path="language_CssHtml" id="4" />
+                    </div>
+                  }
+                  path="chrome-extension(STOCK INFO)"
+                />
+                <LoadImg what="work" path="stockInfo" id="4" />
               </div>
             </div>
           </div>
